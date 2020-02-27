@@ -24,12 +24,11 @@
 	"require": {
 		"php": "^7.3"
 	},
-	"require-dev": {
-	},
+	"require-dev": {},
 	"autoload": {
 		"psr-4": {
 			"Neunerlei\\ContainerAutoWiringDeclaration\\": "Classes"
 		}
 	},
-	"version": "1.0.0"
+	"version": "1.1.0"
 }
