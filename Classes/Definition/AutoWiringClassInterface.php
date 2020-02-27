@@ -17,7 +17,7 @@
  * Last modified: 2020.02.23 at 17:42
  */
 
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 
 
 /**
@@ -25,7 +25,7 @@ namespace Labor\ContainerAutoWiringDeclaration\Definition;
  *
  * Describes the auto wiring definition of a single class.
  *
- * @package Labor\ContainerAutoWiringDeclaration\Definition
+ * @package Neunerlei\ContainerAutoWiringDeclaration\Definition
  */
 interface AutoWiringClassInterface {
 	
@@ -52,7 +52,7 @@ interface AutoWiringClassInterface {
 	 * Returns the list of inject methods of this class.
 	 * This MUST return an empty array if the class does not implement the Injectable interface
 	 * @return AutoWiringMethodInterface[]
-	 * @see \Labor\ContainerAutoWiringDeclaration\InjectableInterface
+	 * @see \Neunerlei\ContainerAutoWiringDeclaration\InjectableInterface
 	 */
 	public function getInjectMethods(): array;
 }

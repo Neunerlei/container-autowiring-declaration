@@ -17,7 +17,7 @@
  * Last modified: 2020.02.22 at 00:09
  */
 
-namespace Labor\ContainerAutoWiringDeclaration;
+namespace Neunerlei\ContainerAutoWiringDeclaration;
 
 /**
  * Interface InjectableInterface
@@ -27,7 +27,7 @@ namespace Labor\ContainerAutoWiringDeclaration;
  * An inject method can either have a single or multiple properties to be injected.
  * If an inject method does not have any properties it should be skipped without errors.
  *
- * @package Labor\ContainerAutoWiringDeclaration
+ * @package Neunerlei\ContainerAutoWiringDeclaration
  */
 interface InjectableInterface {
 	

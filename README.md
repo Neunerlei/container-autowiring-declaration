@@ -11,7 +11,7 @@ composer require labor-digital/container-autowiring-declaration
 ```
 
 ## Interfaces
-```Namespace: Labor\ContainerAutoWiringDeclaration```
+```Namespace: Neunerlei\ContainerAutoWiringDeclaration```
 
 ### SingletonInterface
 Any class that implements this interface MUST be handled as singleton,
@@ -27,7 +27,7 @@ Every class that implements this interface MUST be scanned by the auto-wirer.
 Any auto-wiring related exception MUST implement this interface
 
 ## Definition Interfaces
-```Namespace: Labor\ContainerAutoWiringDeclaration\Definition```
+```Namespace: Neunerlei\ContainerAutoWiringDeclaration\Definition```
 
 This section is a secondary definition which defines an interchange format of auto-wiring configuration definitions.
 Using these interfaces you are able to create a universal auto-wiring handler.
@@ -37,7 +37,7 @@ The main repository that creates and stores auto wiring definitions for the clas
 The auto-wirer MUST get it's definitions using the definition provider.
 
 ```php
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 interface AutoWiringDefinitionProviderInterface {
 	
 	/**
@@ -65,7 +65,7 @@ interface AutoWiringDefinitionProviderInterface {
 Describes the auto wiring definition of a single class.
 
 ```php
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 interface AutoWiringClassInterface {
 	
 	/**
@@ -91,7 +91,7 @@ interface AutoWiringClassInterface {
 	 * Returns the list of inject methods of this class.
 	 * This MUST return an empty array if the class does not implement the Injectable interface
 	 * @return AutoWiringMethodInterface[]
-	 * @see \Labor\ContainerAutoWiringDeclaration\InjectableInterface
+	 * @see \Neunerlei\ContainerAutoWiringDeclaration\InjectableInterface
 	 */
 	public function getInjectMethods(): array;
 
@@ -102,12 +102,12 @@ interface AutoWiringClassInterface {
 Describes the auto wiring definition of a single method inside a class.
 
 ```php
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 interface AutoWiringMethodInterface {
 	
 	/**
 	 * Returns the auto-wiring class definition
-	 * @return \Labor\ContainerAutoWiringDeclaration\Definition\AutoWiringClassInterface
+	 * @return \Neunerlei\ContainerAutoWiringDeclaration\Definition\AutoWiringClassInterface
 	 */
 	public function getClass(): AutoWiringClassInterface;
 	
@@ -130,12 +130,12 @@ interface AutoWiringMethodInterface {
 Describes the auto wiring definition of a single parameter of a method inside a class.
 
 ```php
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 interface AutoWiringParameterInterface {
 	
 	/**
 	 * Returns the auto-wiring method definition
-	 * @return \Labor\ContainerAutoWiringDeclaration\Definition\AutoWiringMethodInterface
+	 * @return \Neunerlei\ContainerAutoWiringDeclaration\Definition\AutoWiringMethodInterface
 	 */
 	public function getMethod(): AutoWiringMethodInterface;
 	
@@ -179,8 +179,8 @@ interface AutoWiringParameterInterface {
 ```
 
 ## Postcardware
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
+You're free to use this package, but if it makes it to your production environment I highly appreciate you sending me a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: LABOR.digital - Fischtorplatz 21 - 55116 Mainz, Germany
+You can find my address [here](https://www.neunerlei.eu/). 
 
-We publish all received postcards on our [company website](https://labor.digital).
+Thank you :D 

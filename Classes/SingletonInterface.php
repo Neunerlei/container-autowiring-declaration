@@ -17,7 +17,7 @@
  * Last modified: 2020.02.21 at 18:34
  */
 
-namespace Labor\ContainerAutoWiringDeclaration;
+namespace Neunerlei\ContainerAutoWiringDeclaration;
 
 /**
  * Interface SingletonInterface
@@ -25,7 +25,7 @@ namespace Labor\ContainerAutoWiringDeclaration;
  * Any class that implements this interface will be handled as singleton,
  * this means that every time it is requested from the container, the same instance will be returned
  *
- * @package Labor\ContainerDelegate
+ * @package Neunerlei\ContainerDelegate
  */
 interface SingletonInterface {
 	

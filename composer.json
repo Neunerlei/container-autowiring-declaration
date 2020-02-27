@@ -1,5 +1,5 @@
 {
-	"name": "labor-digital/container-autowiring-declaration",
+	"name": "neunerlei/container-autowiring-declaration",
 	"description": "A declaration library to extend PSR-11 for dynamic auto-wring based on interfaces",
 	"type": "library",
 	"license": "Apache-2.0",
@@ -18,8 +18,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/labor-digital/container-autowiring-declaration/issues",
-		"source": "https://github.com/labor-digital/container-autowiring-declaration"
+		"issues": "https://github.com/neunerlei/container-autowiring-declaration/issues",
+		"source": "https://github.com/neunerlei/container-autowiring-declaration"
 	},
 	"require": {
 		"php": "^7.3"
@@ -28,7 +28,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Labor\\ContainerAutoWiringDeclaration\\": "Classes"
+			"Neunerlei\\ContainerAutoWiringDeclaration\\": "Classes"
 		}
 	},
 	"version": "1.0.0"

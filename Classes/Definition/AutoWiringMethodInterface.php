@@ -17,20 +17,20 @@
  * Last modified: 2020.02.24 at 13:35
  */
 
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 
 /**
  * Interface AutoWiringMethodInterface
  *
  * Describes the auto wiring definition of a single method inside a class.
  *
- * @package Labor\ContainerAutoWiringDeclaration\Definition
+ * @package Neunerlei\ContainerAutoWiringDeclaration\Definition
  */
 interface AutoWiringMethodInterface {
 	
 	/**
 	 * Returns the auto-wiring class definition
-	 * @return \Labor\ContainerAutoWiringDeclaration\Definition\AutoWiringClassInterface
+	 * @return \Neunerlei\ContainerAutoWiringDeclaration\Definition\AutoWiringClassInterface
 	 */
 	public function getClass(): AutoWiringClassInterface;
 	

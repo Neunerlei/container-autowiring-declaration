@@ -17,14 +17,14 @@
  * Last modified: 2020.02.23 at 17:08
  */
 
-namespace Labor\ContainerAutoWiringDeclaration;
+namespace Neunerlei\ContainerAutoWiringDeclaration;
 
 /**
  * Interface AutoWiringExceptionInterface
  *
  * Any auto-wiring related exception MUST implement this interface
  *
- * @package Labor\ContainerAutoWiringDeclaration
+ * @package Neunerlei\ContainerAutoWiringDeclaration
  */
 interface AutoWiringExceptionInterface {
 	

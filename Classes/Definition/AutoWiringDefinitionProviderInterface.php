@@ -17,7 +17,7 @@
  * Last modified: 2020.02.24 at 13:21
  */
 
-namespace Labor\ContainerAutoWiringDeclaration\Definition;
+namespace Neunerlei\ContainerAutoWiringDeclaration\Definition;
 
 /**
  * Interface AutoWiringDefinitionProviderInterface
@@ -25,7 +25,7 @@ namespace Labor\ContainerAutoWiringDeclaration\Definition;
  * The main repository that creates and stores auto wiring definitions for the classes of you application.
  * The auto-wirer MUST get it's definitions using the definition provider.
  *
- * @package Labor\ContainerAutoWiringDeclaration\Definition
+ * @package Neunerlei\ContainerAutoWiringDeclaration\Definition
  */
 interface AutoWiringDefinitionProviderInterface {
 	
