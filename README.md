@@ -1,3 +1,6 @@
+## ABANDONED/DEPRECATED
+This package should no longer be used and removed from code sources. It is deprecated without replacement.
+
 # PSR-11 Autowiring Declaration
 This package contains some interfaces to extends the [PSR-11 Container definition](https://www.php-fig.org/psr/psr-11/) with auto-wiring hints based on interfaces.
 
